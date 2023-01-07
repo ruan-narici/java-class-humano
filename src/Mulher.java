@@ -12,7 +12,6 @@ public class Mulher extends Humano{
 		System.out.println("Seja bem-vindo ao mundo da programacao!");
 	}
 	
-	
 	// Aqui eu reescreto o método getSexo.
 	// Agora ele além de retornar as informações sobre o sexo, também irá exibir algumas mensagens
 	// diferentes para a Mulher.
