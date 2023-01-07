@@ -7,8 +7,9 @@ public class Mulher extends Humano{
 	// Construir um bloco construtor para a class de herança e definir os mesmos paâmetros.
 	// Depois é só colocar um comportamento que direciona esses inputs ao construtor da class super, 
 	// isto é, ao construtor da class herdada.
-	public Mulher (String sexo,String corDoCabelo,String roupa,String corDaRoupa) {
-		super(sexo,corDoCabelo, roupa, corDaRoupa);
+	public Mulher (String nome, String sexo,String corDoCabelo,String roupa,String corDaRoupa) {
+		super(nome, sexo,corDoCabelo, roupa, corDaRoupa);
+		System.out.println("Seja bem-vindo ao mundo da programacao!");
 	}
 	
 	
@@ -16,9 +17,10 @@ public class Mulher extends Humano{
 	// Agora ele além de retornar as informações sobre o sexo, também irá exibir algumas mensagens
 	// diferentes para a Mulher.
 	@Override
-	public String getSexo() {
-		System.out.println("Seja bem-vindo ao mundo da programacao!");
+	public void getSexo() {
+		System.out.println();
+		System.out.print(super.getNome() + ", você é do sexo: ");
+		System.out.println(super.sexo + ".");
 		System.out.println("Gostaria de fazer a unha e escovar o cabelo nesse final de semana?");
-		return super.getSexo();
 	}
 }
